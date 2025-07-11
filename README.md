@@ -1,4 +1,4 @@
 ## Images
 
-![Images](Images/crm1.png)
+![Images](/FinancialCrm/FinancialCrm/Images/crm1.png)
 
