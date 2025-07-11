@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FinancialCrmDbModelStoreContainer" CdmEntityContainer="FinancialCrmDbEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblBankProcess">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.TblBankProcess">
+        <MappingFragment StoreEntitySet="TblBankProcess">
+          <ScalarProperty Name="BankProcessID" ColumnName="BankProcessID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ProcessDate" ColumnName="ProcessDate" />
+          <ScalarProperty Name="ProcessType" ColumnName="ProcessType" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblBanks">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.TblBanks">
+        <MappingFragment StoreEntitySet="TblBanks">
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="BankTitle" ColumnName="BankTitle" />
+          <ScalarProperty Name="BankBalance" ColumnName="BankBalance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblBills">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.TblBills">
+        <MappingFragment StoreEntitySet="TblBills">
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+          <ScalarProperty Name="BillTitle" ColumnName="BillTitle" />
+          <ScalarProperty Name="BillAmount" ColumnName="BillAmount" />
+          <ScalarProperty Name="BillPeriod" ColumnName="BillPeriod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCategories">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.TblCategories">
+        <MappingFragment StoreEntitySet="TblCategories">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblSpendings">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.TblSpendings">
+        <MappingFragment StoreEntitySet="TblSpendings">
+          <ScalarProperty Name="SpendingID" ColumnName="SpendingID" />
+          <ScalarProperty Name="SpendingTitle" ColumnName="SpendingTitle" />
+          <ScalarProperty Name="SpendingAmount" ColumnName="SpendingAmount" />
+          <ScalarProperty Name="Spending_Date" ColumnName="Spending Date" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUsers">
+      <EntityTypeMapping TypeName="FinancialCrmDbModel.TblUsers">
+        <MappingFragment StoreEntitySet="TblUsers">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
